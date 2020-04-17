@@ -3,6 +3,10 @@ var path = require('path');
 
 module.exports = {
     mode: 'development',
+    devtool: 'inline-source-map',
+    devServer: {
+        contentBase: './dist',
+    },
     entry: './src/index.js',
     output: {
         filename: 'index.[contenthash].js'
@@ -13,8 +17,8 @@ module.exports = {
     module: {
         rules: [
             {
-            test: /\.css$/i,
-            use: ['style-loader', 'css-loader'],
+                test: /\.css$/i,
+                use: ['style-loader', 'css-loader'],
             },
         ],
     },
