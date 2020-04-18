@@ -1,5 +1,6 @@
 import './x.js'
 import jpg from './images/1.jpg'
+import jpg from './images/73.jpg'
 
 const div = document.getElementById('app')
 div.innerHTML = `
