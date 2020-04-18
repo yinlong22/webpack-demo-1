@@ -1,9 +1,9 @@
 yarn build &&
-git checkout gh-paages &&
+git checkout gh-pages &&
 rm -rf *.html *.js *css *.png *.jpg &&
 mv dist/* ./ &&
 rm -rf dist;
-ga . &&
-gc -m 'update' &&
+git add . &&
+git commit -m 'update' &&
 git push &&
 git checkout -
