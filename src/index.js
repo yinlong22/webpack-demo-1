@@ -1,10 +1,9 @@
 import './x.js'
-import jpg1 from './images/1.jpg'
+// import jpg1 from './images/1.jpg'
 import jpg2 from './images/73.jpg'
 
 const div = document.getElementById('app')
 div.innerHTML = `
-    <img src="${jpg1}">
     <img src="${jpg2}">
 `
 
